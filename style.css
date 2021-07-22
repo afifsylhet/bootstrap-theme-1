@@ -218,7 +218,7 @@ Cloth Section Starts From Here
     height: 46rem;
 }
 .cloth-section-image{
-    background-image: url("images/cloth-model.jpg");
+    background-image: url("Images/cloth-model.jpg");
     background-repeat: no-repeat;
     background-position:center; 
     background-size: 40rem 50rem;
