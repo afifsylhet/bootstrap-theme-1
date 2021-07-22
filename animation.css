@@ -70,7 +70,7 @@ body{
 .animation-2{
     height: 30rem;
     width: 48rem;
-    background-image:url("images/animation/nature.jpg");
+    background-image:url("Images/animation/nature.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
