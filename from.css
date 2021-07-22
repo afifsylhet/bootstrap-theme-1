@@ -1,0 +1,139 @@
+
+body {
+    background-image: url("images/form-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-backround-size:cover;
+
+}
+form{
+    background-color: rgba(135, 207, 235, 0.76);
+    border-radius: 10px;
+    padding: 10px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.input-common-class{
+    width: 100%;
+    box-sizing: border-box;
+    height: 2.5rem;
+}
+input:focus{
+    border: 3px solid blue;
+    font-size: 1.4rem;
+}
+button{
+    padding: 6px 25px;
+    background-color: skyblue;
+    font-weight: 600;
+    border-radius: 8px;
+}
+main{
+    padding: 25px 0px;
+}
+textarea{
+    height: 8rem;
+    width: 100%;
+}
+
+/* -------------------------
+    navbar starts from here
+--------------------------*/
+
+.nav-background{
+    background-color: blue;
+}
+.nav-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+}
+.nav-item{
+    display: inline;
+    list-style: none;
+    margin: 0 1.5rem;
+    font-size: 1.25rem;
+}
+.nav-item:hover {
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+.nav-item > .nav-link{
+    text-decoration: none;
+    color: white;
+}
+/* -----------------------------------
+Mobile Responsive Starts Form Here
+--------------------------------------- */
+
+@media only screen and (max-width:688px) {
+    
+    .nav-background{
+            height: auto;
+            display: block;
+        }
+    .nav-main{
+            padding-top: 1rem;
+            display: block;
+            height: 16rem;
+        }
+    .nav-item{
+            display: block;
+        }
+        .nav-mother{
+            width: auto;
+        }
+    }
+/* -------------------------------------
+Tablet Responsive Starts From Here
+------------------------------------ */
+@media only screen and (max-width:992px) and (min-width:689px) {
+    .input-common-class{
+        width: 33rem;
+        box-sizing: border-box;  
+    }
+    textarea{
+        height: 8rem;
+        width: 33rem;
+    }
+        
+    .nav-background{
+        height: auto;
+        display: block;
+    }
+    .nav-main{
+        padding-top: 1rem;
+        display: block;
+        height: 16rem;
+    }
+    .nav-item{
+        display: block;
+    }
+    .nav-mother{
+        width: auto;
+    }
+}
+
+/* -------------------------------------
+Monitor (LG) Responsive Starts From Here
+------------------------------------ */
+
+@media only screen  and (min-width:993px) {
+    .input-common-class{
+        width: 45rem;
+        box-sizing: border-box;  
+    }
+    textarea{
+        height: 8rem;
+        width: 45rem;
+    }
+}

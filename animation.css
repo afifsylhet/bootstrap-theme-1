@@ -1,0 +1,248 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -------------------------
+    navbar starts from here
+--------------------------*/
+
+.nav-background{
+    background-color: blue;
+}
+.nav-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+}
+.nav-item{
+    display: inline;
+    list-style: none;
+    margin: 0 1.5rem;
+    font-size: 1.25rem;
+}
+.nav-item:hover {
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+.nav-item > .nav-link{
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    width: 96%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-gap: 2rem;
+}
+
+/* Animation-1 */
+
+
+.animation-1{
+    background-color: blue;
+    height: 30rem;
+    width: 30rem;
+    animation: ;
+    /* transform: scale(1.5); */
+}
+.animation-1 img{
+    height:25rem;
+    width: 25rem;
+    animation: 6s ease-in 1s infinite reverse both running afif;
+}
+@keyframes afif {
+    0%{
+        transform:translate(50px, 50px);
+    }
+    50%{
+        transform:translate(-50px, -50px);
+    }
+    100%{
+        transform:translate(50px, 50px);
+    }
+}
+
+/* Animation-2 */
+
+.animation-2{
+    height: 30rem;
+    width: 48rem;
+    background-image:url("images/animation/nature.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow:hidden;
+}
+.dark{
+    position: absolute;
+    height: 30rem;
+    width: 60rem;
+    z-index: 1;
+    animation: 10s ease-in 1s infinite reverse both running afif-1;
+
+}
+.sun{
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    z-index: 10;
+    box-shadow: -15px -15px 30px white;
+    animation: 10s ease-in 1s infinite reverse both running afif-2;
+}
+
+@keyframes afif-1 {
+    0%{
+        background-color: rgba(0, 0, 0, 0.137);
+    }
+    100%{
+        background-color: rgba(0, 0, 0, 0.966);
+    }
+}
+
+@keyframes afif-2 {
+    0%{
+        opacity: 100%;
+        transform: translate( 22rem, -8rem);
+    }
+    100%{
+        opacity: 100%;
+        transform: translate( 22rem, 25rem);    }
+}
+
+/* -------------------------------------
+Mobile Responsive Starts From Here
+------------------------------------ */
+
+@media only screen  and (max-width:688px) {
+    
+
+    .nav-background{
+        height: auto;
+        display: block;
+    }
+    .nav-main{
+        padding-top: 1rem;
+        display: block;
+        height: 16rem;
+    }
+    .nav-item{
+        display: block;
+    }
+    
+    .container{
+        height: auto;
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .animation-1{
+        margin: 0px;
+        padding: 0px;
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .animation-1 img{
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .animation-2{
+        width: 15rem;
+        height: 30rem;
+        margin: 0px;
+        padding: 0px;
+    }
+    @keyframes afif-1 {
+        0%{
+            background-color: rgba(0, 0, 0, 0.137);
+        }
+        100%{
+            background-color: rgba(0, 0, 0, 0.966);
+        }
+    }
+    
+    @keyframes afif-2 {
+        0%{
+            opacity: 100%;
+            transform: translate( 5rem, -8rem);
+        }
+        100%{
+            opacity: 100%;
+            transform: translate( 5rem, 25rem);    }
+    }
+}
+
+
+/* -------------------------------------
+Tab Responsive Starts From Here
+------------------------------------ */
+
+@media only screen  and (min-width:689px) and (max-width:992px) {
+     .nav-background{
+        height: auto;
+        display: block;
+    }
+    .nav-main{
+        padding-top: 1rem;
+        display: block;
+        height: 16rem;
+    }
+    .nav-item{
+        display: block;
+    }
+
+    .container{
+        height: auto;
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .animation-1{
+        margin: 0px;
+        padding: 0px;
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .animation-1 img{
+        height: 25rem;
+        width: 25rem;
+    }
+
+    .animation-2{
+        width: 30rem;
+        height: 30rem;
+        margin: 0px;
+        padding: 0px;
+    }
+    @keyframes afif-1 {
+        0%{
+            background-color: rgba(0, 0, 0, 0.137);
+        }
+        100%{
+            background-color: rgba(0, 0, 0, 0.966);
+        }
+    }
+    
+    @keyframes afif-2 {
+        0%{
+            opacity: 100%;
+            transform: translate( 11rem, -8rem);
+        }
+        100%{
+            opacity: 100%;
+            transform: translate( 11rem, 25rem);    
+        }
+    }
+}
+
+

@@ -1,0 +1,89 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 96%;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+table{
+    border-collapse: collapse;
+}
+tr, td, th{
+    table-layout: fixed;
+    width: 100%;
+    border: 3px solid purple;
+    padding: 3px 16px;
+}
+
+.main-table{
+    overflow: scroll;
+}
+
+thead{
+    background-color: gray;
+}
+
+/* -------------------------
+    navbar starts from here
+--------------------------*/
+
+.nav-background{
+    background-color: blue;
+}
+.nav-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+}
+.nav-item{
+    display: inline;
+    list-style: none;
+    margin: 0 1.5rem;
+    font-size: 1.25rem;
+}
+.nav-item:hover {
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+.nav-item > .nav-link{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+@media only screen and (max-width:688px) {
+    
+    .nav-background{
+            height: auto;
+            display: block;
+        }
+    .nav-main{
+            padding-top: 1rem;
+            display: block;
+            height: 16rem;
+        }
+    .nav-item{
+            display: block;
+        }
+    }    
+    @media only screen and (min-width:689px) and (max-width:992px) {
+        
+        .nav-background{
+            height: auto;
+            display: block;
+        }
+        .nav-main{
+            padding-top: 1rem;
+            display: block;
+            height: 16rem;
+        }
+        .nav-item{
+            display: block;
+        }
+        }
+        

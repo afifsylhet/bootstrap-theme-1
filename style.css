@@ -1,0 +1,483 @@
+/* Common Style starts form here */
+
+*{
+    margin:0px;
+}
+
+body{
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* -------------------------
+    navbar starts from here
+--------------------------*/
+
+.nav-background{
+    background-color: blue;
+}
+.nav-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+}
+.nav-item{
+    display: inline;
+    list-style: none;
+    margin: 0 1.5rem;
+    font-size: 1.25rem;
+}
+.nav-item:hover {
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+.nav-item > .nav-link{
+    text-decoration: none;
+    color: white;
+}
+
+/* -------------------------------------
+    Heading Section starts from here
+--------------------------------------*/
+
+.heading-section{
+margin-top: 1rem;
+margin-bottom: 1rem;
+width: 100%;
+height: 35rem;
+background-image: url("Images/main-banner.jpg");
+background-repeat: no-repeat;
+background-position:center; 
+background-size:cover;
+position: relative;
+}
+
+.content{
+    padding-top: 4rem;
+    margin-left: 3.5rem;
+    color: white;
+}
+.content h2 {
+    font-size: 2rem;
+}
+.content h1 {
+    font-weight: 800;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2.7rem;
+}
+.content p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+.content a{
+    color: white;
+    text-decoration: none;
+    padding: .9rem 2.5rem;
+    background-color: red;
+    border-radius: .5rem;
+    font-size: 1.3rem;
+}
+.sub-banner img{
+    width: 50rem;
+    height: 18rem;
+    position: absolute;
+    top: 30rem;
+    left: 7rem;
+}
+
+/*--------------------------
+Tranding Product Section 
+--------------------------*/
+
+.product-section{
+    margin-top: 10rem;
+}
+
+.product-section h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 3rem;
+}
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2.6rem;
+}
+.product-item{
+    width: 16rem;
+    padding:.4rem;
+    background-color: white;
+    box-shadow: .2rem .2rem .8rem rgba(0, 0, 0, 0.815);
+}
+.product-item img{
+    width: 16rem;
+    height: 12rem;
+    border-radius: .8rem;
+    margin-bottom: 1re;
+}
+.product-item h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.product-section p{
+    color:tomato;
+}
+.product-price{
+    display: flex;
+    justify-content: space-between;
+    color: blueviolet;
+}
+.product-price p{
+    color: black;
+}
+.product-item button{
+    width: 100%;
+    padding: .5rem 2rem;
+    background-color: blue;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+/* ---------------------------------
+Top Middle Section starts form here 
+------------------------------------*/
+
+.top-middle-section{
+    display:grid;
+    grid-template-columns: 7fr 5fr;
+    grid-gap: 2rem;
+}
+.hello{
+    height: 17em;
+    background-image: url("Images/background-shape-1.png");
+    background-repeat: no-repeat;
+    background-position:center; 
+    background-size:cover;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.hello-heading{
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+}
+.hello h1{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-weight: 800;
+}
+.hello img{
+    height: 17rem;
+    width: 20rem;
+}
+.hello button{
+    padding: .5rem 2rem;
+    background-color: rgba(0, 0, 255, 0.767);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+.hello-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(105, 105, 238);
+}
+.hello-1 button{
+    padding: .5rem 2rem;
+    background-color: rgba(0, 0, 255, 0.767);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;   
+}
+.hello-1 p{
+    margin: .7rem;
+}
+
+/*-------------------------------
+Cloth Section Starts From Here 
+--------------------------------*/
+
+.cloth-section {
+    display: grid;
+    grid-template-columns: 5fr 8fr;
+    grid-gap: 1rem;
+    height: 46rem;
+}
+.cloth-section-image{
+    background-image: url("images/cloth-model.jpg");
+    background-repeat: no-repeat;
+    background-position:center; 
+    background-size: 40rem 50rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    font-weight: 800;
+}
+.cloth-section-image h1{
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+}
+.cloth-section-image p{
+    padding-left: 1.5rem;
+}
+.cloth-section-cloth{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .5rem;
+}
+
+/* ######################################################### */
+
+.cloth-item{
+    width: 14rem;
+    height: 22rem;
+    padding:.4rem;
+    background-color: white;
+    box-shadow: .1rem .1rem .8rem rgba(0, 0, 0, 0.815);
+}
+.cloth-item img{
+    width: 14rem;
+    height: 14rem;
+    border-radius: .8rem;
+    margin-bottom: 1re;
+}
+.cloth-section p{
+    color:tomato;
+}
+
+#pargaraph{
+    color: black;
+}
+.cloth-price{
+    display: flex;
+    justify-content: space-between;
+    color: blueviolet;
+}
+.cloth-price p{
+    color: black;
+}
+.cloth-item button{
+    width: 100%;
+    padding: .5rem 2rem;
+    background-color: blue;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+/* ------------------------------------------
+ Shop By Brand Section Starts From Here
+------------------------------------------ */
+.brands{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3.5rem;
+}
+center h1 {
+    font-size: 2rem;
+}
+.brand-item{
+    box-shadow: .1rem .1rem 1rem blue;
+    width: 16rem;
+    height: 10rem;
+}
+.brand-item img{
+    width: 16rem;
+    height: 10rem;
+    padding: .2rem;
+}
+
+/*----------------------------------------
+Social Media Section Starts From Here 
+-------------------------------------------*/
+
+.social-media {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    height: 12rem;
+    padding-top: 1rem;
+    background-color: rgb(142, 142, 236);
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: blue;
+}
+.icon{
+    font-size: 4rem;
+    font-weight: 900;
+    color: blue;
+}
+
+/*-----------------------------------
+Footer Section Starts From Here 
+------------------------------------*/
+footer{
+    margin-top: 1.5rem;
+    color: white;
+    background-color: blue;
+}
+
+footer p {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    text-align: center;
+}
+
+/* -----------------------------------
+Mobile Responsive Starts Form Here
+--------------------------------------- */
+
+@media only screen and (max-width:688px) {
+    
+.nav-background{
+        height: auto;
+        display: block;
+    }
+.nav-main{
+        padding-top: 1rem;
+        display: block;
+        height: 16rem;
+    }
+.nav-item{
+        display: block;
+    }
+.heading-section{
+        height: auto;
+    }
+.sub-banner{
+    display: none;
+    }
+.products{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    }
+.top-middle-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+.hello img{
+    height: 150px;
+    width: 200px;
+    }
+.cloth-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+    }
+.cloth-section-image{
+    background-image: url("images/cloth-model.jpg");
+    background-repeat: no-repeat;
+    background-position:left; 
+    background-size: 27rem 50rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    font-weight: 800;
+    height: 40rem;
+    }
+.cloth-section-cloth{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    height: auto;
+    }
+.brands{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    }
+.social-media{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    height: auto;
+    padding-bottom: 2rem;
+    }
+}
+
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    
+    .nav-background{
+        height: auto;
+        display: block;
+    }
+    .nav-main{
+        padding-top: 1rem;
+        display: block;
+        height: 16rem;
+    }
+    .nav-item{
+        display: block;
+    }
+    .sub-banner{
+        display: none;
+        }
+    .products{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        }
+    .top-middle-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        }
+    .hello img{
+        height: 200px;
+        width: 250px;
+        }
+    .cloth-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        }
+    .cloth-section-image{
+        background-image: url("images/cloth-model.jpg");
+        background-repeat: no-repeat;
+        background-position:center; 
+        background-size: 100% 65rem;
+        padding-top: 1.5rem;
+        padding-left: 1.5rem;
+        font-weight: 800;
+        height: 40rem;
+        }
+    .cloth-section-cloth{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        height: auto;
+        grid-row-gap: 2rem;
+        }
+    .brands{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        }
+    .social-media{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        height: auto;
+        padding-bottom: 2rem;
+        }
+    }
+    
+/* ----------------
+    The End 
+------------------*/
